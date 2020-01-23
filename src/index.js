@@ -9,7 +9,8 @@ const taskRouter = require('./routers/task')
 const app = express()
 const port = process.env.PORT
 
-
+app.use(express.static('website'))
+ 
 
 
 app.use(express.json())
